@@ -34,7 +34,6 @@ namespace ProjetoLojaABC
             this.pctSplash = new System.Windows.Forms.PictureBox();
             this.pgbSplash = new System.Windows.Forms.ProgressBar();
             this.lblPorcentagem = new System.Windows.Forms.Label();
-            this.lblPorc = new System.Windows.Forms.Label();
             this.tmrSplash = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctSplash)).BeginInit();
@@ -62,21 +61,11 @@ namespace ProjetoLojaABC
             // 
             this.lblPorcentagem.AutoSize = true;
             this.lblPorcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(357, 364);
+            this.lblPorcentagem.Location = new System.Drawing.Point(363, 370);
             this.lblPorcentagem.Name = "lblPorcentagem";
-            this.lblPorcentagem.Size = new System.Drawing.Size(18, 20);
+            this.lblPorcentagem.Size = new System.Drawing.Size(32, 20);
             this.lblPorcentagem.TabIndex = 2;
-            this.lblPorcentagem.Text = "0";
-            // 
-            // lblPorc
-            // 
-            this.lblPorc.AutoSize = true;
-            this.lblPorc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorc.Location = new System.Drawing.Point(397, 364);
-            this.lblPorc.Name = "lblPorc";
-            this.lblPorc.Size = new System.Drawing.Size(23, 20);
-            this.lblPorc.TabIndex = 3;
-            this.lblPorc.Text = "%";
+            this.lblPorcentagem.Text = "0%";
             // 
             // tmrSplash
             // 
@@ -92,7 +81,6 @@ namespace ProjetoLojaABC
             this.button1.TabIndex = 4;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmSplash
             // 
@@ -100,7 +88,6 @@ namespace ProjetoLojaABC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 557);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblPorc);
             this.Controls.Add(this.lblPorcentagem);
             this.Controls.Add(this.pgbSplash);
             this.Controls.Add(this.pctSplash);
@@ -122,7 +109,6 @@ namespace ProjetoLojaABC
         private System.Windows.Forms.PictureBox pctSplash;
         private System.Windows.Forms.ProgressBar pgbSplash;
         private System.Windows.Forms.Label lblPorcentagem;
-        private System.Windows.Forms.Label lblPorc;
         private System.Windows.Forms.Timer tmrSplash;
         private System.Windows.Forms.Button button1;
     }

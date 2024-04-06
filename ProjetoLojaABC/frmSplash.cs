@@ -41,13 +41,21 @@ namespace ProjetoLojaABC
 
         private void tmrSplash_Tick(object sender, EventArgs e)
         {
-            
+            if (pgbSplash.Value < 100)
+            {
+                pgbSplash.Value += 100;
+                lblPorcentagem.Text = pgbSplash.Value.ToString() + "%";
+            }
+            else
+            {
+                tmrSplash.Enabled = false;
+                frmLogin abrir = new frmLogin();
+                abrir.Show();
+                this.Hide();
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            pgbSplash.Value +=100 ;
-            lblPorcentagem.Text = pgbSplash.Value.ToString();
-        }
+
+
     }
 }

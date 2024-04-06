@@ -39,5 +39,11 @@ namespace ProjetoLojaABC
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
+        //desabilitar campos
+        public void desabilitarCampos()
+        {
+
+        }
     }
+
 }
